@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<br>
+<h3 style="text-align: left; color: gray;">Cadastrar Nova Marca</h3>
+<div class="col-md-4">
+
+	<hr>
+	<label style="color: gray;" class="form-label">Marca</label>
+	<input type="text" class="form-control" placeholder="...">
+	<br>
+	<a class="btn btn-primary" href="#">Cadastrar</a>
+	<a class="btn btn-secondary" href="{{url_for('marca')}}">Voltar</a>
+</div>
+{% endblock conteudo  %}

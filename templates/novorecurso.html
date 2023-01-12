@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<section class="full-height px-lg-5">
+    <br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 style="text-align: left; color: gray;">Recurso</h3>
+        </div>
+        <div class="col">
+            <a href="{{url_for('sobre')}}" class="btn btn-primary">Novo Recurso</a>
+            <a href="{{url_for('main')}}" class="btn btn-secondary">Voltar</a>
+        </div>  
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row g-0">
+        <div class="col">
+            <br>
+        <h5 style="color: gray;">Legenda:</h5>
+            <p style="color: red;">[ Em Uso ] <font color="green">[ Disponível ]</font></p>
+        </div>
+        <div class="col-3">
+            <br>
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="...">
+        </div>
+        <div class="col-2">
+            <br>
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select style="color: gray;" class="form-select" id="autoSizingSelect">
+            <option style="color:gray;" selected>Por Serial<uloption>
+            <option value="1">Por Recursos</option>
+            <option value="2">Por Colaborador</option>
+            <option value="3">Por ID</option>
+            </select>
+        </div>
+        <div class="col">
+            <br>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+{% endblock conteudo %}

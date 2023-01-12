@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<section class="full-height px-lg-5">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 style="text-align: left; color: gray;">Concessão</h3>
+            </div>
+            <div class="col">
+                <a href="{{url_for('principal')}}" class="btn btn-primary">Nova Concessão</a>
+                <a href="#" class="btn btn-primary">Relatório</a>
+                <a href="{{url_for('main')}}" class="btn btn-secondary">Voltar</a>
+            </div>  
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col">
+            <h5 style="color: gray;">Legenda:</h5>
+                <p style="color: gray;">[ Ativo Sênior ] | <font color="red">[ Inativo Sênior ]</font></p>
+            </div>
+            <div class="col-3">
+                <br>
+                <label class="visually-hidden" for="autoSizingInput">Name</label>
+                <input type="text" class="form-control" id="autoSizingInput" placeholder="...">
+            </div>
+            <div class="col-2">
+                <br>
+                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                <select style="color: gray;" class="form-select" id="autoSizingSelect">
+                <option style="color:gray;" selected>Por Serial<uloption>
+                <option value="1">Por Recursos</option>
+                <option value="2">Por Colaborador</option>
+                <option value="3">Por ID</option>
+                </select>
+            </div>
+            <div class="col">
+                <br>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+        <br>
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Recursos</th>
+                        <th scope="col">dt Con.</th>
+                        <th scope="col">dt Lib.</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Colaborador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="color: gray;" scope="row">275 | SAMSUNG A10</th>
+                        <td>10/01/2023</td>
+                        <td> - </td>
+                        <td>Em Uso</td>
+                        <td>LUCAS FERREIRA DE FREITAS</td>
+                    </tr>
+                    <tr>
+                        <th style="color: gray;" scope="row">471 | CHIP VIVO</th>
+                        <td>10/01/2023</td>
+                        <td> -</td>
+                        <td>Em Uso</td>
+                        <td>LUCAS FERREIRA DE FREITAS</td>
+                    </tr>
+                    <tr>
+                        <th style="color: gray;" scope="row">459 | SAMSUNG GALAXY TAB E</th>
+                        <td>03/01/2023</td>
+                        <td> -</td>
+                        <td>Em Uso</td>
+                        <td>MARCEL HENRIQUES DE PAULA SANTOS</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        
+        </div>
+
+    </div>
+
+</section>
+
+
+
+{% endblock conteudo %}
