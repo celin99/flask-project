@@ -3,85 +3,93 @@
 
 <section class="full-height px-lg-5">
 	<div class="col-9">
-    <div class="row">
-        <div class="col-12">
-            <div class="area-info">
-                <div class="row">
-                    <div class="col">                        
-                    </div>
-                    <div class="area-info">
-                        <div class="row">
-                            <div class="col">
-                            	<br>
-                            	<h3 style="text-align: center; color: gray;">Cadastrar novo Recurso</h3>
-								<hr>
-								<form class="row g-3">
-								  <div class="col-md-6">
-								    <label style="color: gray;" class="form-label">Recurso</label>
-								    <input placeholder="..." type="text" class="form-control">
-								  </div>
-								  <div class="col-md-6">
-								    <label style="color: gray;" class="form-label">Descrição</label>
-								    <input placeholder="..." type="text" class="form-control">
-								  </div>
-								   <div class="col-12">
-								    <label style="color: gray;" for="inputState" class="form-label">Marca</label>
-								    <select id="inputState" class="form-select">
-								      <option selected>...</option>
-								      <option></option>
-								    </select>
-								  </div>
-								  <div class="col-6">
-								    <label style="color: gray;" for="inputAddress2" class="form-label">MAC Adress</label>
-								    <input type="text" class="form-control" id="inputAddress2" placeholder="...">
-								  </div>
-								  <div class="col-md-6">
-								    <label style="color: gray;" for="inputCity" class="form-label">Serial (IMEI/Chave/ID recurso)</label>
-								    <input placeholder="..." type="text" class="form-control">
-								  </div>
-								  <div class="col-md-4">
-								    <label style="color: gray;" for="inputState" class="form-label">Processador</label>
-								    <select id="inputState" class="form-select">
-								      <option selected>...</option>
-								      <option></option>
-								    </select>
-								  </div>
-								  <div class="col-md-4">
-								    <label style="color: gray;" for="inputState" class="form-label">Memória</label>
-								    <select id="inputState" class="form-select">
-								      <option selected>...</option>
-								      <option></option>
-								    </select>
-								  </div>
-								  <div class="col-md-4">
-								    <label style="color: gray;" class="form-label">Ítem (Nota Fiscal)</label>
-								    <input type="text" class="form-control">
-								  </div>
-								  <div class="col-12">
-								  <div class="col-md-12">
-									    <label style="color: gray;" for="inputState" class="form-label">Tipo</label>
-									    <select id="inputState" class="form-select">
-									      <option selected>...</option>
-									      <option>Ex1</option>
-									      <option>Ex2</option>
-									    </select>
-									    <br>
-									    <button type="button" class="btn btn-primary ">Cadastrar</button>
-									<a href="{{url_for('novorecurso')}}" class="btn btn-secondary">Voltar</a>
-								  	</div>
-								    </div>
-								  </div>
-								  <p></p>
+		<div class="row">
+			<div class="col-12">
+				<div class="area-info">
+					<div class="row">
+						<div class="col">
+						</div>
+						<div class="area-info">
+							<div class="row">
+								<div class="col">
+									<br>
+									<h3 style="text-align: center; color: gray;">Cadastrar novo Recurso</h3>
+									<hr>
+									<form class="row g-3">
+										<div class="col-md-6">
+											<label style="color: gray;" class="form-label">Recurso</label>
+											<input placeholder="..." type="text" class="form-control">
+										</div>
+										<div class="col-md-6">
+											<label style="color: gray;" class="form-label">Descrição</label>
+											<input placeholder="..." type="text" class="form-control">
+										</div>
+										<div class="col-12">
+											<label style="color: gray;" for="inputState"
+												class="form-label">Marca</label>
+											<select id="inputState" class="form-select">
+												<option selected>...</option>
+												<option></option>
+											</select>
+										</div>
+										<div class="col-6">
+											<label style="color: gray;" for="inputAddress2" class="form-label">MAC
+												Adress</label>
+											<input type="text" class="form-control" id="inputAddress2"
+												placeholder="...">
+										</div>
+										<div class="col-md-6">
+											<label style="color: gray;" for="inputCity" class="form-label">Serial
+												(IMEI/Chave/ID recurso)</label>
+											<input placeholder="..." type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label style="color: gray;" for="inputState"
+												class="form-label">Processador</label>
+											<select id="inputState" class="form-select">
+												<option selected>...</option>
+												<option></option>
+											</select>
+										</div>
+										<div class="col-md-4">
+											<label style="color: gray;" for="inputState"
+												class="form-label">Memória</label>
+											<select id="inputState" class="form-select">
+												<option selected>...</option>
+												<option></option>
+											</select>
+										</div>
+										<div class="col-md-4">
+											<label style="color: gray;" class="form-label">Ítem (Nota Fiscal)</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-12">
+											<div class="col-md-12">
+												<label style="color: gray;" for="inputState"
+													class="form-label">Tipo</label>
+												<select id="inputState" class="form-select">
+													<option selected>...</option>
+													<option>Ex1</option>
+													<option>Ex2</option>
+												</select>
+												<br>
+												<button type="button" class="btn btn-success ">Cadastrar</button>
+												<a href="{{url_for('novorecurso')}}"
+													class="btn btn-secondary">Voltar</a>
+											</div>
+										</div>
+								</div>
+								<p></p>
 
 								</form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 </section>
 <br>
 

@@ -2,36 +2,39 @@
 {% block conteudo %}
 
 <section class="full-height px-lg-5">
-		<p></p>
+	<p></p>
 	<h3 style="text-align: center; color: gray;">Cadastrar Nova Concessão</h3>
 	<form class="row g-2">
 		<div class="col-md-10">
 			<hr>
 			<label for="inputState" class="form-label">Colaborador</label>
-		    <select id="inputState" class="form-select">			 
+			<select id="inputState" class="form-select">
 				<option selected>...</option>
 				<option></option>
 			</select>
 		</div>
 		<br>
 		<div class="col-md-5">
-			<label for="inputState" class="form-label">ID do recurso</label>	    <select id="inputState" class="form-select">			    <option selected>...</option>
+			<label for="inputState" class="form-label">ID do recurso</label> <select id="inputState"
+				class="form-select">
+				<option selected>...</option>
 				<option></option>
-		    </select>
+			</select>
 			<br>
 		</div>
 		<br>
 		<div class="col-md-5">
 			<div class="mb-3">
-		  		<label for="data" class="form-label conf-form">Data Concessão</label>	  		
-				<input type="datetime-local" name="data" class="form-control conf-form ls-mask-date_time" id="Titulo" value="" required> 
+				<label for="data" class="form-label conf-form">Data Concessão</label>
+				<input type="datetime-local" name="data" class="form-control conf-form ls-mask-date_time" id="Titulo"
+					value="" required>
 			</div>
 		</div>
 		<div class="col-md-auto">
-			<button class="btn btn-success" >Adicionar</button>
+			<button class="btn btn-success">Cadastrar</button>
 			<a class="btn btn-secondary btn-ajustes-texto" href="{{url_for('cadastroconc')}}">Voltar</a>
 		</div>
-	</form>	
+	</form>
 </section>
 
-{% endblock conteudo %} 
+{% endblock conteudo %}
