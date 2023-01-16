@@ -44,7 +44,7 @@ def sobre():
 def recursotipo():
     if request.method == "POST":
         if request.form.get("recurso") and request.form.get("recurso"):
-            recurso.append({"recurso": request.form.get(
+            recursos.append({"recurso": request.form.get(
                 "recurso"), "recurso": request.form.get("recurso")})
     return render_template("recursotipo.html", recursos=recursos)
 
@@ -53,7 +53,7 @@ def recursotipo():
 def novorecursotipo():
     if request.method == "POST":
         if request.form.get("recursotipo") and request.form.get("recursotipo"):
-            recurso.append({"recursotipo": request.form.get(
+            recursos.append({"recursotipo": request.form.get(
                 "recursotipo"), "recursotipo": request.form.get("recursotipo")})
     return render_template("novorecursotipo.html", recursostp=recursostp)
 
@@ -62,7 +62,7 @@ def novorecursotipo():
 def cadastroconc():
     if request.method == "POST":
         if request.form.get("cad_conc") and request.form.get("cad_conc"):
-            recurso.append({"cad_conc": request.form.get(
+            recursos.append({"cad_conc": request.form.get(
                 "cad_conc"), "cad_conc": request.form.get("cad_conc")})
     return render_template("cadastroconcessao.html", cadconc=cadconc)
 
@@ -71,7 +71,7 @@ def cadastroconc():
 def novorecurso():
     if request.method == "POST":
         if request.form.get("novo_rec") and request.form.get("novo_rec"):
-            recurso.append({"novo_rec": request.form.get(
+            recursos.append({"novo_rec": request.form.get(
                 "novo_rec"), "novo_rec": request.form.get("novo_rec")})
     return render_template("novorecurso.html", nrecurso=nrecurso)
 
@@ -80,7 +80,7 @@ def novorecurso():
 def notafiscal():
     if request.method == "POST":
         if request.form.get("n_fisc") and request.form.get("n_fisc"):
-            recurso.append({"n_fisc": request.form.get("n_fisc"),
+            recursos.append({"n_fisc": request.form.get("n_fisc"),
                            "n_fisc": request.form.get("n_fisc")})
     return render_template("notafiscal.html", nfiscal=nfiscal)
 
@@ -89,7 +89,7 @@ def notafiscal():
 def cadastronf():
     if request.method == "POST":
         if request.form.get("cad_nf") and request.form.get("cad_nf"):
-            recurso.append({"cad_nf": request.form.get("cad_nf"),
+            recursos.append({"cad_nf": request.form.get("cad_nf"),
                            "cad_nf": request.form.get("cad_nf")})
     return render_template("cadastronf.html", cadnf=cadnf)
 
@@ -98,7 +98,7 @@ def cadastronf():
 def marca():
     if request.method == "POST":
         if request.form.get("marcas") and request.form.get("marcas"):
-            recurso.append({"marcas": request.form.get("marcas"),
+            recursos.append({"marcas": request.form.get("marcas"),
                            "marcas": request.form.get("marcas")})
     return render_template("marcas.html", marcas=marcas)
 
@@ -107,6 +107,6 @@ def marca():
 def novamarca():
     if request.method == "POST":
         if request.form.get("n_marcas") and request.form.get("n_marcas"):
-            recurso.append({"n_marcas": request.form.get(
+            recursos.append({"n_marcas": request.form.get(
                 "n_marcas"), "n_marcas": request.form.get("n_marcas")})
     return render_template("novamarca.html", novamarcas=novamarcas)
