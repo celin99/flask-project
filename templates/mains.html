@@ -1,24 +1,23 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 
-<section class="full-height px-lg-5">
-	<br>
+<section style="text-align: center;" class="full-height col-lg">
+
 	<p></p>
 	<br>
+	<h2 style="color: rgb(255, 111, 45);"> <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/128/9339/9339121.png" alt="">  <b>SCIENCE</b> <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/128/9339/9339121.png" alt=""> </h2>
+	<h3 style="color: rgb(255, 111, 45);">Sistema de Concessão de Recursos</h3>
 	<p></p>
 	<br>
-	<h1 style="text-align: center; font-family:monospace ; color: dimgray;"> <b>SCIENCE</b></h1>
-	<h2 style="text-align: center; font-family:monospace; color: dimgray;"> <b>Sistema de Concessão de Recursos</b></h2>
-	<hr>
-	<div class="row g-2">
-		<a href="{{url_for('cadastroconc')}}" class="btn btn-outline-primary"> <b>Concessão</b></a>
-		<a href="{{url_for('novorecurso')}}" class="btn btn-outline-primary"> <b>Recurso</b></a>
-		<a href="{{url_for('recursotipo')}}" class="btn btn-outline-primary"><b>Recurso Tipo</b></a>
-		<a href="{{url_for('notafiscal')}}" class="btn btn-outline-primary"> <b>Nota Fiscal</b></a>
-		<a href="{{url_for('marca')}}" class="btn btn-outline-primary"> <b>Marcas</b></a>
+	<div class=" btn-group-vertical gap-2 col-8 mx-auto ">
+		<a href="{{url_for('cadastroconc')}}" class="btn btn-outline-primary btn-lg"> <b>Concessão</b></a>
+		<a href="{{url_for('novorecurso')}}" class="btn btn-outline-primary btn-lg"> <b>Recurso</b></a>
+		<a href="{{url_for('recursotipo')}}" class="btn btn-outline-primary btn-lg"><b>Recurso Tipo</b></a>
+		<a href="{{url_for('notafiscal')}}" class="btn btn-outline-primary btn-lg"> <b>Nota Fiscal</b></a>
+		<a href="{{url_for('marca')}}" class="btn btn-outline-primary btn-lg"> <b>Marcas</b></a>
 	</div>
-	<hr>
+		
 </section>
 
 
-{% endblock conteudo %}
+{% endblock conteudo %}				

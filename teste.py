@@ -8,5 +8,5 @@ dados = resposta.read()
 
 jsondata = json.loads(dados)
 
-print(jsondata)
+print(jsondata['results'])
 
