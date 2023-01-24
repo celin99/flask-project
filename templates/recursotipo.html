@@ -16,9 +16,6 @@
                             <br>
                             <a href="{{url_for('novorecursotipo')}}" class="btn btn-primary btn-ajustes-texto">Novo
                                 Recurso Tipo</a>
-                        </div>
-                        <div class="col-md-auto">
-                            <br>
                             <a href="{{url_for('main')}}" class="btn btn-secondary">Voltar</a>
                         </div>
                     </div>
@@ -75,15 +72,10 @@
                                                     class="edit-icone"><i class="bi bi-pencil-square"></i></a>
                                             </div>
                                             <div class="col nopadding">
-                                                <form
-                                                    action="http://intranet.portinfo.com.br/science/recurso-tipo/deletar/8"
-                                                    method="POST"
-                                                    onsubmit="return confirm('Tem certeza que deseja excluir?')">
-                                                    <input type="hidden" name="_token"
-                                                        value="RTAKF6AJKCI7asL8vWmS6XeEpdlTQyxMs7fKZISn"> <input
-                                                        type="hidden" name="_method" value="DELETE"> <button
-                                                        type="submit" class="anular-botao cor-cinza"><i
-                                                            class="bi bi-trash"></i></i></button>
+                                                <form action="http://intranet.portinfo.com.br/science/recurso-tipo/deletar/8" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir?')">
+                                                    <input type="hidden" name="_token" value="RTAKF6AJKCI7asL8vWmS6XeEpdlTQyxMs7fKZISn">
+                                                    <input type="hidden" name="_method" value="DELETE"> 
+                                                    <button type="submit" class="anular-botao cor-cinza"><i class="bi bi-trash"></i></i></button>
                                                 </form>
                                             </div>
                                         </div>

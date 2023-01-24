@@ -23,27 +23,21 @@
                 <p style="color: red;">[ Em Uso ] <font color="green">[ Disponível ]</font>
                 </p>
             </div>
-            <div class="col-4">
-                <br>
-                <br>
-                <label class="visually-hidden" for="autoSizingInput">Name</label>
-                <input type="text" class="form-control" id="autoSizingInput" placeholder="...">
-            </div>
-            <div class="col-2">
-                <br>
-                <br>
-                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                <select style="color: gray;" class="form-select" id="autoSizingSelect">
-                    <option style="color:gray;" selected>Por Serial<uloption>
-                    <option value="1">Por Recursos</option>
-                    <option value="2">Por Colaborador</option>
-                    <option value="3">Por ID</option>
-                </select>
-            </div>
-            <div class="col">
-                <br>
-                <br>
-                <button type="submit" class="btn btn-primary">Buscar</button>
+            <p></p>
+            <div class="row-cols-2">
+                <form method="GET" action="http://intranet.portinfo.com.br/science/concessao">
+                <input type="hidden" name="_token" value="6FzByeamHLuy7hh7OE953YGzrvjy1dkg1UBrvpkc">
+                <div class="input-group row-cols-12">
+                    <input type="text" name="search" class="form-control btn-ajustes-texto" placeholder="...">
+                    <select class="form-select conf-form busca-science" name="info" aria-label="Default select example">
+                        <option value="serial">por Série</option>
+                        <option value="recursos">por Recursos</option>
+                        <option value="colaborador">por Colaborador</option>
+                        <option value="id">por Id</option>
+                    </select>
+                    <button class="btn btn-secondary btn-ajustes-texto" type="submit">Buscar</button>
+                </div>
+                </form>
             </div>
         </div>
         <div>
