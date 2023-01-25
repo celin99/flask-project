@@ -11,7 +11,7 @@
             <div class="col">
                 <a href="{{url_for('principal')}}" class="btn btn-primary">Nova Concessão</a>
                 <a href="{{url_for('main')}}" class="btn btn-secondary">Voltar</a>
-                <a href="#" class="btn btn-outline-dark">Relatório</a>
+                <a href="http://intranet.portinfo.com.br/science/concessao/relatorio" target="_blank" class="btn btn-outline-dark">Relatório</a>
             </div>
         </div>
     </div>
@@ -40,7 +40,24 @@
                 </div>
             <div>
                 <hr>
-                <table class="table">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Recursos</th>
+                        <th>dt Con.</th>
+                        <th>dt Lib.</th>
+                        <th>Status</th>
+                        <th>Colaborador</th>
+                    </tr>
+                    {% for row in concessao %}
+                    <tr>
+                        <td>{{ row[2] }}</td>
+                        <td>{{ row[3] }}</td>
+                        <td>{{ row[4] }}</td>
+                        <td>{{ row[1] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <!-- <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Recursos</th>
@@ -101,7 +118,7 @@
                         <td>JOSE CARLOS DIAS PRIMO</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
         </div>
 
     </div>
